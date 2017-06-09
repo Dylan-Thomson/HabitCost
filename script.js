@@ -1,6 +1,3 @@
-
-
-
 $('form').submit(function () {
  var spent = $('#inputSpent').val();
  var times = $('#inputTimes').val();
