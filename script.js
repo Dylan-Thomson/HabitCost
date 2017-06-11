@@ -13,10 +13,10 @@ $('form').submit(function () {
 
  var total = spent * times * freqMultiplier;
 
- 	$('#outputSpent').text(total.toLocaleString(undefined, {
+ $('#outputSpent').text(total.toLocaleString(undefined, {
  		minimumFractionDigits: 2,
  		maximumFractionDigits: 2
- 	}));
- 	$('#output').removeClass("hidden");
+ }));
+ // $('#output').removeClass("hidden");
  return false;
 });
