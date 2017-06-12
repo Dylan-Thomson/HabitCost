@@ -2,9 +2,7 @@ $('form').submit(function () {
  var spent = $('#inputSpent').val();
  var times = $('#inputTimes').val();
  var freq = $('#inputFrequency').val();
- // var durationNum = $('#inputDurationNum').val();
- // var duration = $('#inputDuration').val();
-	
+
  var freqMultiplier;
  if(freq === "daily") freqMultiplier = 365;
  else if(freq === "weekly") freqMultiplier = 52;
