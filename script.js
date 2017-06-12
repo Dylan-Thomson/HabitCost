@@ -6,7 +6,7 @@ $('form').submit(function () {
  // var duration = $('#inputDuration').val();
 	
  var freqMultiplier;
- if(freq === "daily") freqMultiplier = 365.25;
+ if(freq === "daily") freqMultiplier = 365;
  else if(freq === "weekly") freqMultiplier = 52;
  else if(freq === "monthly") freqMultiplier = 12;
  else if(freq === "yearly") freqMultiplier = 1;
@@ -17,6 +17,5 @@ $('form').submit(function () {
  		minimumFractionDigits: 2,
  		maximumFractionDigits: 2
  }));
- // $('#output').removeClass("hidden");
  return false;
 });
