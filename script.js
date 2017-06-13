@@ -1,5 +1,6 @@
 $('form').submit(function () {
  var spent = $('#inputSpent').val();
+ var habit = $('#inputHabit').val();
  var times = $('#inputTimes').val();
  var freq = $('#inputFrequency').val();
 
@@ -11,9 +12,13 @@ $('form').submit(function () {
 
  var total = spent * times * freqMultiplier;
 
+ $('#outputHabit').text(habit);
+
  $('#outputSpent').text(total.toLocaleString(undefined, {
  		minimumFractionDigits: 2,
  		maximumFractionDigits: 2
  }));
+
+
  return false;
 });
