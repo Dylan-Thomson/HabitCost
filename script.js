@@ -1,3 +1,5 @@
+var total = 0;
+
 $('form').submit(function () {
  var spent = $('#inputSpent').val();
  var habit = $('#inputHabit').val();
@@ -10,16 +12,15 @@ $('form').submit(function () {
  else if(freq === "monthly") freqMultiplier = 12;
  else if(freq === "yearly") freqMultiplier = 1;
 
- var total = spent * times * freqMultiplier;
+ var habitTotal = spent * times * freqMultiplier;
+ total += habitTotal;
 
- // $('#outputHabit').text(habit);
-
- var totalText = total.toLocaleString(undefined, {
+ var habitTotalText = habitTotal.toLocaleString(undefined, {
  		minimumFractionDigits: 2,
  		maximumFractionDigits: 2
  });
 
- $('ul').append("<li> " + habit + " costs you $" + totalText + " a year!</li>");
+ $('ul').append("<li> " + habit + " costs you $" + habitTotalText + " a year!</li>");
 
  $('#outputSpent').text(total.toLocaleString(undefined, {
  		minimumFractionDigits: 2,
