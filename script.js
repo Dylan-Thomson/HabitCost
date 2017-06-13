@@ -12,7 +12,14 @@ $('form').submit(function () {
 
  var total = spent * times * freqMultiplier;
 
- $('#outputHabit').text(habit);
+ // $('#outputHabit').text(habit);
+
+ var totalText = total.toLocaleString(undefined, {
+ 		minimumFractionDigits: 2,
+ 		maximumFractionDigits: 2
+ });
+
+ $('ul').append("<li> " + habit + " costs you $" + totalText + " a year!</li>");
 
  $('#outputSpent').text(total.toLocaleString(undefined, {
  		minimumFractionDigits: 2,
@@ -20,5 +27,9 @@ $('form').submit(function () {
  }));
 
 
+ $('#inputSpent').val('');
+ $('#inputHabit').val('');
+ $('#inputTimes').val('');
+ $('#inputFrequency').val('daily');
  return false;
 });
