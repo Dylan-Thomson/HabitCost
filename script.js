@@ -20,7 +20,7 @@ $('form').submit(function () {
  		maximumFractionDigits: 2
  });
 
- $('ul').append("<li> " + habit + " costs you $" + habitTotalText + " a year!</li>");
+ $('ul').append("<li><i class='fa fa-minus-circle' aria-hidden='true'></i> " + habit + " costs you $" + habitTotalText + " a year!</li>");
 
  $('#outputSpent').text(total.toLocaleString(undefined, {
  		minimumFractionDigits: 2,
