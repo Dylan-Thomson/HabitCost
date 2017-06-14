@@ -29,18 +29,50 @@ label, .btn {
 	background: #fff;
 	border-radius: 25px;
 }
-
-.col-lg-6 {
-}
-
-.btn {
-	width: 100%;
-}
 */
 
-.container-fluid {
-	min-width: 80%;
+body {
+	background: black;
 }
+
+h1, h2 {
+	text-align: center;
+}
+
+h1 {
+	margin: 0;
+	padding: 10px 20px;
+	background: white;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	height: 50px;
+	line-height: 40px;
+
+	background: #fff;
+	color: #666;
+
+}
+
+li:nth-child(2n) {
+	background: #f7f7f7;
+}
+
+form {
+	margin: 25px;
+}
+
+.container-fluid {
+	background: #eee;
+	/*min-width: 60%;*/
+}
+
 
 .btn-default {
 	width: 100%;
@@ -52,8 +84,4 @@ label, .btn {
 
   display: flex;
   align-items: center;
-}
-
-#output {
-	/*background: gray;*/
 }
