@@ -32,7 +32,8 @@ label, .btn {
 */
 
 body {
-	background: black;
+	background: #E35218;
+	color: #666;
 }
 
 h1, h2 {
@@ -42,7 +43,8 @@ h1, h2 {
 h1 {
 	margin: 0;
 	padding: 10px 20px;
-	background: white;
+	background: #eee;
+	/*color: #67CA15;*/
 }
 
 ul {
@@ -54,29 +56,51 @@ ul {
 li {
 	height: 50px;
 	line-height: 40px;
+	text-align: center;
 
-	background: #fff;
+	background: #eee;
 	color: #666;
 
 }
 
 li:nth-child(2n) {
-	background: #f7f7f7;
+	background: #ddd;
 }
 
 form {
 	margin: 25px;
 }
 
+.form-control:focus {
+	border: 2px solid #67CA15;
+}
+
+.fa {
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.fa-coffee, .fa-usd, #outputSpent {
+	color: #E35218;
+}
+
 .container-fluid {
-	background: #eee;
-	/*min-width: 60%;*/
+	background: #ddd;
+	border: 1px solid #67CA15;
 }
 
 
 .btn-default {
 	width: 100%;
+	background: #67CA15;
+	color: #eee;
 }
+
+.btn-default:hover, .btn-default:active, .btn-default:target, .btn-default:focus {
+	background: #83D53F;
+	color: #eee;
+}
+
 
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
