@@ -37,10 +37,23 @@ label, .btn {
 	width: 100%;
 }
 */
+
+.container-fluid {
+	min-width: 80%;
+}
+
+.btn-default {
+	width: 100%;
+}
+
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh; 
 
   display: flex;
   align-items: center;
+}
+
+#output {
+	/*background: gray;*/
 }
