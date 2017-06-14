@@ -20,12 +20,14 @@ $('form').submit(function () {
  		maximumFractionDigits: 2
  });
 
- $('ul').append("<li><i class='fa fa-minus-circle' aria-hidden='true'></i> " + habit + " costs you $" + habitTotalText + " a year!</li>");
-
- $('#outputSpent').text(total.toLocaleString(undefined, {
+ var totalText = total.toLocaleString(undefined, {
  		minimumFractionDigits: 2,
  		maximumFractionDigits: 2
- }));
+ });
+
+ $('ul').append("<li> You spend $" + spent + " on " + habit + " " + times + " times " + freq + " costing you $" + habitTotalText + " a year!</li>");
+
+ $('#outputSpent').text(totalText);
 
 
  $('#inputSpent').val('');
