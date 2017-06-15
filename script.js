@@ -30,7 +30,7 @@ $('form').submit(function () {
  else {
  	li += " times ";
  }
- li += freq + " - costing you $" + habitTotalText + " each year</li>";
+ li += freq + " - yearly cost is: <span class='habitCost'>$" + habitTotalText + "</span></li>";
 
  $('ul').append(li);
 

@@ -37,7 +37,8 @@ ul {
 li {
 	height: 50px;
 	line-height: 40px;
-	text-align: center;
+	padding: 0px 25px;
+	/*text-align: center;*/
 
 	background: #eee;
 	color: #666;
@@ -100,4 +101,10 @@ form {
 
   display: flex;
   align-items: center;
+}
+
+.habitCost {
+	color: #E35218;
+	font-size: 1.5em;
+	float: right;
 }
