@@ -1,36 +1,3 @@
-/*body {
-	background: #00B6D0;
-}
-
-
-h1{
-	text-align: center;
-	font-size: 3em;
-	font-family: 'Allerta', Georgia, Times, serif;
-	margin-bottom: 50px;
-}
-
-h2 {
-	text-align: center;
-	font-size: 4em;
-	font-family: 'Crimson Text', Helvetica, Arial, sans-serif; 
-}
-
-select, input {
-	font-family: 'Crimson Text', Helvetica, Arial, sans-serif;
-}
-
-label, .btn {
-	font-family: 'Allerta', Georgia, Times, serif;
-}
-
-.container-fluid {
-	padding: 10% 5%;
-	background: #fff;
-	border-radius: 25px;
-}
-*/
-
 body {
 	background: #E35218;
 	background: -moz-linear-gradient(top, rgba(135,40,3,1) 0%, rgba(245,73,5,1) 52%, rgba(252,158,120,1) 100%);
@@ -51,7 +18,14 @@ h1 {
 	margin: 0;
 	padding: 10px 20px;
 	background: #eee;
-	/*color: #67CA15;*/
+	border-bottom: 1px solid #67CA15;
+}
+
+h2 {
+	background: #fff;
+	margin: 0;
+	padding: 10px 20px;
+	border-top: 1px solid #67CA15;
 }
 
 ul {
@@ -83,13 +57,13 @@ form {
 }
 
 .fa {
-	font-weight: bold;
 	font-size: 1em;
 }
 
 .fa-coffee, .fa-usd, #outputSpent {
 	color: #E35218;
 }
+
 
 .container-fluid {
 	background: #ddd;
@@ -106,6 +80,7 @@ form {
 .btn-default:hover, .btn-default:active, .btn-default:target, .btn-default:focus {
 	background: #83D53F;
 	color: #eee;
+	border: 1px solid #67CA15;
 }
 
 
