@@ -37,11 +37,15 @@ $('form').submit(function () {
  $('#outputSpent').text(totalText);
 
 //Reset inputs
- $('#inputSpent').val('');
- $('#inputHabit').val('');
- $('#inputTimes').val('');
- $('#inputFrequency').val('daily');
- return false;
+	resetInputs();
+  return false;
+});
+
+$(".btn-danger").on("click", function() {
+	resetInputs();
+	total = 0;
+	$('#outputSpent').text("0.00");
+	$('ul').text("");
 });
 
 //convert number to string with two decimal places
@@ -50,4 +54,11 @@ function toDollarString(num) {
  		minimumFractionDigits: 2,
  		maximumFractionDigits: 2
  });
+}
+
+function resetInputs() {
+ $('#inputSpent').val('');
+ $('#inputHabit').val('');
+ $('#inputTimes').val('');
+ $('#inputFrequency').val('daily');
 }

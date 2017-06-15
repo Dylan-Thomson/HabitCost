@@ -67,14 +67,13 @@ form {
 
 .container-fluid {
 	background: #ddd;
-	border: 1px solid #67CA15;
 }
 
 
 .btn-default {
 	width: 100%;
 	background: #67CA15;
-	color: #eee;
+	color: #fff;
 }
 
 .btn-default:hover, .btn-default:active, .btn-default:target, .btn-default:focus {
@@ -83,6 +82,17 @@ form {
 	border: 1px solid #67CA15;
 }
 
+.btn-danger {
+	width: 100%;
+	background: #B23B0B;
+	color: #fff;
+	border: none;
+	border-radius: 0;
+}
+
+.btn-danger:hover, .btn-danger:active, .btn-danger:target, .btn-danger:focus {
+	background: #E35218;
+}
 
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
