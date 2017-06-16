@@ -8,6 +8,7 @@ body {
 	background: linear-gradient(to bottom, rgba(135,40,3,1) 0%, rgba(245,73,5,1) 52%, rgba(252,158,120,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#872803', endColorstr='#fc9e78', GradientType=0 );
 	color: #666;
+	font-size: 1.5em;
 
 	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 }
@@ -42,7 +43,6 @@ li {
 	height: 50px;
 	line-height: 40px;
 	padding: 0px 25px;
-	/*text-align: center;*/
 
 	background: #eee;
 	color: #666;
@@ -61,21 +61,12 @@ form {
 	border: 2px solid #67CA15;
 }
 
-.fa {
-	font-size: 1em;
-}
-
 .fa-coffee, .fa-usd, #outputSpent {
 	color: #E35218;
 }
 
-
 .container-fluid {
 	background: #ddd;
-}
-
-.btn {
-	/*font-family: 'Arvo', Georgia, Times, serif;*/
 }
 
 .btn-default {
@@ -102,16 +93,15 @@ form {
 	background: #E35218;
 }
 
+.habitCost {
+	color: #E35218;
+	font-size: 1.5em;
+	float: right;
+}
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh; 
 
   display: flex;
   align-items: center;
-}
-
-.habitCost {
-	color: #E35218;
-	font-size: 1.5em;
-	float: right;
 }
