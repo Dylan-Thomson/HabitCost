@@ -1,5 +1,8 @@
 @media (max-width: 766px) {
-	h1, h2, ul, li {
+	h1, h2 {
+	}
+
+	ul, li {
 		font-size: 1em;
 	}
 
@@ -97,6 +100,7 @@ input:-webkit-autofill:focus {
 	width: 100%;
 	background: #67CA15;
 	color: #fff;
+	border: 1px solid #4E9F0A;
 }
 
 .btn-default:hover, .btn-default:active, .btn-default.active, .btn-default:focus, .btn-default.focus, .btn-default:active:hover, .btn-default.active:hover {
