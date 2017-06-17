@@ -75,6 +75,12 @@ form {
 	margin: 25px;
 }
 
+input:-webkit-autofill, input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+
 .form-control:focus {
 	border: 2px solid #67CA15;
 }
@@ -96,7 +102,7 @@ form {
 .btn-default:hover, .btn-default:active, .btn-default.active, .btn-default:focus, .btn-default.focus, .btn-default:active:hover, .btn-default.active:hover {
 	background: #83D53F;
 	color: #eee;
-	border: 1px solid #67CA15;
+	border: 1px solid #4E9F0A;
 }
 
 .btn-danger {
