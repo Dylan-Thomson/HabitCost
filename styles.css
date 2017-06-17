@@ -1,3 +1,21 @@
+@media (max-width: 766px) {
+	h1, h2, ul, li {
+		font-size: 1em;
+	}
+
+	label {
+		font-size: 0.75em;
+	}
+
+	.container-fluid {
+		width: 100%;
+	}
+
+	#inputFrequency {
+		margin-top: 10px;
+	}
+}
+
 body {
 	background: #E35218;
 	background: -moz-linear-gradient(top, rgba(135,40,3,1) 0%, rgba(245,73,5,1) 52%, rgba(252,158,120,1) 100%);

@@ -1,4 +1,13 @@
+$(document).ready(function() {
+	// run test on initial page load
+	checkSize();
+
+	// run test on resize of window
+	$(window).resize(checkSize);
+});
+
 var total = 0;
+var smallScreen = false;
 
 $('form').submit(function () {
 // Get input
@@ -23,18 +32,26 @@ $('form').submit(function () {
 
 
 // Build an <li> to append
- var li = "<li>You spend $" + spentText + " on " + habit + " - " + times;
- if(times < 2) {
- 	li += " time ";
+ if(smallScreen) {
+ 	var li = "<li>" + habit + " annual cost: <span class='habitCost'>$" + habitTotalText + "</span></li>";
+ 	$('ul').append(li);
+
+	$('#outputSpent').text(totalText);
  }
  else {
- 	li += " times ";
+	 var li = "<li>You spend $" + spentText + " on " + habit + " - " + times;
+	 if(times < 2) {
+	 	li += " time ";
+	 }
+	 else {
+	 	li += " times ";
+	 }
+	 li += freq + " - yearly cost is: <span class='habitCost'>$" + habitTotalText + "</span></li>";
+
+	 $('ul').append(li);
+
+	 $('#outputSpent').text(totalText);	 	
  }
- li += freq + " - yearly cost is: <span class='habitCost'>$" + habitTotalText + "</span></li>";
-
- $('ul').append(li);
-
- $('#outputSpent').text(totalText);
 
 //Reset inputs
 	resetInputs();
@@ -61,4 +78,10 @@ function resetInputs() {
  $('#inputHabit').val('');
  $('#inputTimes').val('');
  $('#inputFrequency').val('daily');
+}
+
+function checkSize() {
+	if($("#inputFrequency").css("margin-top") == "10px") {
+		smallScreen = true;
+	}
 }
