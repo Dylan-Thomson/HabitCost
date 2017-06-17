@@ -93,7 +93,7 @@ form {
 	color: #fff;
 }
 
-.btn-default:hover, .btn-default:active, .btn-default:target, .btn-default:focus {
+.btn-default:hover, .btn-default:active, .btn-default.active, .btn-default:focus, .btn-default.focus, .btn-default:active:hover, .btn-default.active:hover {
 	background: #83D53F;
 	color: #eee;
 	border: 1px solid #67CA15;
@@ -107,7 +107,7 @@ form {
 	border-radius: 0;
 }
 
-.btn-danger:hover, .btn-danger:active, .btn-danger:target, .btn-danger:focus {
+.btn-danger:hover, .btn-danger:active, .btn-danger.active, .btn-danger:focus, .btn-danger.focus, .btn-danger:active:hover, .btn-danger.active:hover {
 	background: #E35218;
 }
 
