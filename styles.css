@@ -108,6 +108,7 @@ input:-webkit-autofill:focus {
 	background: #83D53F;
 	border: 1px solid #4E9F0A;
 	color: #fff;
+	outline: none;
 }
 
 .btn-danger {
